@@ -15,7 +15,7 @@ The question is how much money is won/lost on a bet that at least two people hav
 
 Instuctor has done this 15 times,  
 1.what is his expected win/loss amount,  
-2. how much would the instructor have to wager to make the bet fair 
+2. how much would the instructor have to wager to make the bet fair?  
 3. how many students would have to be in the class for a 2:1 bet to be fair?   
  
  
@@ -26,7 +26,7 @@ saveArray=vector('numeric')
 for(k in 1:1000){
   bank = 0
   for(i in 1:525){
-    sampleClass = sample(days, 25, replace = TRUE)
+    sampleClass = sample(days, 35, replace = TRUE)
 
     repeats = length(unique(sampleClass))
     if (repeats == 35) bank = bank - 2
