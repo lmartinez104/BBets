@@ -1,7 +1,7 @@
 ---
 title: "BBets Project"
-author: "Dr. J"
-date: "1/31/2020"
+author: "Logan Martinez"
+date: "3/19/2020"
 output: html_document
 ---
 
