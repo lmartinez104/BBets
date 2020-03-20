@@ -22,14 +22,17 @@ Instuctor has done this 15 times,
 ```{r}
 days = 1:365
 
+nStudents = 35
+nBets = nStudents*15
+
 saveArray=vector('numeric')
 for(k in 1:1000){
   bank = 0
-  for(i in 1:525){
-    sampleClass = sample(days, 35, replace = TRUE)
+  for(i in 1:nBets){
+    sampleClass = sample(days, nStudents, replace = TRUE)
 
     repeats = length(unique(sampleClass))
-    if (repeats == 35) bank = bank - 2
+    if (repeats == nStudents) bank = bank -4.35
     else bank = bank + 1
   }
 saveArray[k]= bank
@@ -50,4 +53,10 @@ print('average amt:')
 print(mean(saveArray))
 ```
 
+1. The amt of $ on average won/lost is 233 for Dr. J. 
+  
+2. The amt of $ Dr. J should wager to have it be even is $4.35
+
+3. The number of students to break even at 2:1 is 29 students. That puts it at 18.5. With 28 students it goes into the negatives. 
+  
   
